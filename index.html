@@ -24,7 +24,7 @@
       <li><a href="#research">Research</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="assets/resume/JestinThomas_Resume.pdf" target="_blank" class="nav-cta">Resume →</a>
+    <a href="assets/resume/JestinThomas_Resume.pdf" target="_blank" class="nav-cta">Resume</a>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -33,70 +33,83 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
+  <canvas id="star-canvas" class="star-canvas"></canvas>
   <div class="hero-inner">
+
+    <!-- LEFT -->
     <div class="hero-left">
-      <div class="hero-tag">
-        <span class="tag-dot"></span>
-        Available for opportunities
-      </div>
+      <div class="hero-tag"><span class="tag-dot"></span>Available for opportunities</div>
       <h1 class="hero-name">
         Jestin<br/>
-        <span class="hero-name-italic">Thomas</span>
+        <em>Thomas</em>
       </h1>
-      <p class="hero-role">AI/ML Engineer & Data Scientist</p>
-      <p class="hero-desc">MSc Data Science · IEEE Published Researcher<br/>Government of India Design Patent Co-holder</p>
+      <p class="hero-role">AI/ML Engineer &amp; Data Scientist</p>
+      <p class="hero-desc">MSc Data Science · IEEE Published Researcher · Government of India Design Patent Co-holder</p>
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-secondary">Get In Touch</a>
+        <a href="assets/resume/JestinThomas_Resume.pdf" target="_blank" class="btn-secondary">Download Resume</a>
       </div>
       <div class="hero-social">
-        <a href="https://github.com/Jestin1507" target="_blank" class="social-link">GitHub</a>
-        <span class="social-sep">·</span>
-        <a href="https://linkedin.com/in/jestin-thomas-90a109317" target="_blank" class="social-link">LinkedIn</a>
-        <span class="social-sep">·</span>
-        <a href="mailto:jestinthomas1507@gmail.com" class="social-link">Email</a>
+        <a href="https://github.com/Jestin1507" target="_blank" class="social-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/jestin-thomas-90a109317" target="_blank" class="social-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:jestinthomas1507@gmail.com" class="social-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          Email
+        </a>
+      </div>
+
+      <!-- Stats row under social -->
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-n" data-count="91">0</span><span class="hstat-u">%</span>
+          <p>Peak Accuracy</p>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n" data-count="12">0</span><span class="hstat-u">K+</span>
+          <p>Data Points</p>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n" data-count="6">0</span><span class="hstat-u"></span>
+          <p>Projects</p>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n" data-count="2">0</span><span class="hstat-u"></span>
+          <p>Internships</p>
+        </div>
       </div>
     </div>
+
+    <!-- RIGHT — Photo with floating skill stars -->
     <div class="hero-right">
-      <div class="hero-img-wrap">
-        <img src="assets/images/profile.png" alt="Jestin Thomas" class="hero-img"/>
-        <div class="hero-img-badge badge-ieee">
-          <span class="badge-icon">📄</span>
-          <div>
-            <p class="badge-title">IEEE Published</p>
-            <p class="badge-sub">ICVADV-2026</p>
-          </div>
-        </div>
-        <div class="hero-img-badge badge-patent">
-          <span class="badge-icon">🏛️</span>
-          <div>
-            <p class="badge-title">Design Patent</p>
-            <p class="badge-sub">Govt. of India</p>
-          </div>
+      <div class="photo-universe">
+        <!-- Floating skill stars — positioned around photo -->
+        <div class="fstar fs1">Python</div>
+        <div class="fstar fs2">CNN</div>
+        <div class="fstar fs3">LLMs</div>
+        <div class="fstar fs4">SQL</div>
+        <div class="fstar fs5">RAG</div>
+        <div class="fstar fs6">AWS</div>
+        <div class="fstar fs7">Power BI</div>
+        <div class="fstar fs8">Docker</div>
+        <div class="fstar fs9">TensorFlow</div>
+        <div class="fstar fs10">Streamlit</div>
+
+        <!-- Photo -->
+        <div class="hero-photo-wrap">
+          <img src="assets/images/profile.png" alt="Jestin Thomas" class="hero-photo"/>
         </div>
       </div>
     </div>
-  </div>
-  <div class="hero-stats">
-    <div class="stat-item">
-      <span class="stat-n" data-count="91">0</span><span class="stat-unit">%</span>
-      <p>Peak Model Accuracy</p>
-    </div>
-    <div class="stat-div"></div>
-    <div class="stat-item">
-      <span class="stat-n" data-count="12">0</span><span class="stat-unit">K+</span>
-      <p>Data Points Analysed</p>
-    </div>
-    <div class="stat-div"></div>
-    <div class="stat-item">
-      <span class="stat-n" data-count="6">0</span><span class="stat-unit"></span>
-      <p>Live Projects</p>
-    </div>
-    <div class="stat-div"></div>
-    <div class="stat-item">
-      <span class="stat-n" data-count="6">0</span><span class="stat-unit">mo</span>
-      <p>Production AI Experience</p>
-    </div>
+
   </div>
 </section>
 
@@ -105,34 +118,34 @@
   <div class="container">
     <div class="section-header">
       <span class="section-tag">About</span>
-      <h2 class="section-title">Building AI that<br/><em>solves real problems</em></h2>
+      <h2 class="section-title">Building AI that<br/><em>works in the real world</em></h2>
     </div>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm a Data Scientist and AI/ML Engineer completing my MSc in Data Science at CHRIST University, Bengaluru. With production experience at TechZia and Seeroo IT Solutions, I build systems that go beyond models — they get deployed, monitored, and maintained.</p>
-        <p>My work spans autonomous vehicle cybersecurity, restaurant market intelligence, LLMOps platforms, and generative AI research — all shipped to production, not just notebooks.</p>
-        <p>I'm an IEEE-published researcher and Government of India Design Patent co-holder, bringing research-grade rigor to engineering-grade execution.</p>
+        <p>I'm a Data Scientist and AI/ML Engineer based in Bengaluru, with an MSc in Data Science from CHRIST University and a BSc in Statistics from Sree Sankara College. I've built and shipped production AI systems — not just models in notebooks.</p>
+        <p>Through internships at TechZia and Seeroo IT Solutions, I've worked on autonomous vehicle cybersecurity, NLP pipelines, LLMOps platforms, and restaurant market intelligence — each one deployed and maintained end-to-end.</p>
+        <p>I hold an IEEE publication and a Government of India Design Patent, which means I bring the same rigour to engineering that I do to research.</p>
         <div class="about-pills">
           <span>Python</span><span>TensorFlow</span><span>LangChain</span><span>RAG</span>
           <span>Power BI</span><span>SQL</span><span>AWS</span><span>Docker</span>
-          <span>Streamlit</span><span>GitHub Actions</span>
+          <span>Streamlit</span><span>GitHub Actions</span><span>Scikit-learn</span><span>Keras</span>
         </div>
       </div>
       <div class="about-skills reveal">
         <div class="skill-group">
-          <h4>Machine Learning & AI</h4>
+          <h4>Machine Learning &amp; AI</h4>
           <p>CNN, LSTM, GRU, Transformers, XGBoost, Random Forest, Transfer Learning, A/B Testing, Time Series</p>
         </div>
         <div class="skill-group">
-          <h4>Generative AI & LLMOps</h4>
+          <h4>Generative AI &amp; LLMOps</h4>
           <p>LLMs, RAG, AI Agents, LangChain, GANs, VAE, Diffusion Models, Prompt Engineering, FAISS</p>
         </div>
         <div class="skill-group">
-          <h4>Data Science & Analytics</h4>
+          <h4>Data Science &amp; Analytics</h4>
           <p>EDA, Hypothesis Testing, Predictive Analytics, Statistical Modelling, Power BI, Tableau, Plotly</p>
         </div>
         <div class="skill-group">
-          <h4>Cloud & Infrastructure</h4>
+          <h4>Cloud &amp; Infrastructure</h4>
           <p>AWS, Google Cloud, Docker, Flask, FastAPI, GitHub Actions CI/CD, MLOps, Streamlit Cloud</p>
         </div>
       </div>
@@ -145,17 +158,16 @@
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Experience</span>
-      <h2 class="section-title">Where I've <em>shipped</em></h2>
+      <h2 class="section-title">Where I've <em>worked</em></h2>
     </div>
     <div class="exp-list">
-
       <div class="exp-item reveal">
         <div class="exp-meta">
           <div class="exp-logo tz-logo">TZ</div>
           <div>
             <p class="exp-company">TechZia</p>
             <p class="exp-period">Jan 2026 – Jun 2026</p>
-            <span class="exp-badge">AI/ML</span>
+            <span class="exp-badge">AI/ML Engineering</span>
           </div>
         </div>
         <div class="exp-content">
@@ -163,34 +175,32 @@
           <p class="exp-project">Autonomous Vehicle Cybersecurity Agent</p>
           <ul>
             <li>Architected <strong>CNN + LSTM real-time anomaly detection</strong> on AV telemetry (IMU, CAN bus, GPS) in ROS 2 Humble across 3 sensor streams with sub-100ms inference latency</li>
-            <li>Built <strong>DQN-based MARL</strong> system with 3 specialised RL agents (sensor security, vehicle behaviour, network cybersecurity) under a hierarchical global decision agent</li>
-            <li>Preprocessed <strong>comma.ai AV dataset</strong> via vectorised NumPy pipelines; researched CNN-Transformer hybrid and GNN-based multi-sensor fusion for network intrusion detection</li>
+            <li>Built a <strong>DQN-based multi-agent reinforcement learning</strong> system with 3 specialised RL agents under a hierarchical global decision agent for sensor security, vehicle behaviour, and network cybersecurity</li>
+            <li>Preprocessed the <strong>comma.ai AV dataset</strong> via vectorised NumPy pipelines and researched CNN-Transformer hybrid and GNN-based multi-sensor fusion architectures for network intrusion detection</li>
           </ul>
           <div class="exp-tags"><span>Python</span><span>TensorFlow</span><span>ROS 2</span><span>CNN+LSTM</span><span>DQN</span><span>MARL</span><span>GNN</span></div>
         </div>
       </div>
-
       <div class="exp-item reveal">
         <div class="exp-meta">
           <div class="exp-logo si-logo">SI</div>
           <div>
             <p class="exp-company">Seeroo IT Solutions</p>
-            <p class="exp-period">Apr 2025 – May 2025 · 2 mos</p>
+            <p class="exp-period">Apr 2025 – May 2025</p>
             <span class="exp-badge exp-badge-2">Data Science</span>
           </div>
         </div>
         <div class="exp-content">
           <h3>Data Science Intern</h3>
-          <p class="exp-project">100-Hour Internship · Kalamaserry, Kochi · On-site</p>
+          <p class="exp-project">100-Hour Internship · Kalamaserry, Kochi</p>
           <ul>
-            <li>Optimised <strong>NLP query-processing pipelines</strong>, achieving 62% reduction in query latency and handling 500+ daily queries reliably</li>
-            <li>Built a production-deployed <strong>intelligent chatbot</strong> for data-related support queries, reducing analyst response load using Python, Pandas, and Scikit-learn</li>
-            <li>Performed <strong>end-to-end EDA and feature pipeline standardisation</strong> across complex multi-source datasets, improving downstream model accuracy</li>
+            <li>Optimised <strong>NLP query-processing pipelines</strong>, achieving a 62% reduction in average query latency and enabling the system to reliably handle 500+ daily queries</li>
+            <li>Built and deployed an <strong>intelligent chatbot</strong> for data-related support queries, reducing analyst response load using Python, Pandas, and Scikit-learn</li>
+            <li>Performed <strong>end-to-end EDA and feature pipeline standardisation</strong> across complex multi-source datasets to improve downstream model accuracy</li>
           </ul>
           <div class="exp-tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>NLP</span><span>EDA</span><span>Chatbot</span></div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -204,98 +214,98 @@
     </div>
     <div class="proj-grid">
 
-      <div class="proj-card reveal">
-        <div class="proj-num">01</div>
-        <div class="proj-header">
-          <h3>Automated Species Identification</h3>
-          <a href="https://github.com/Jestin1507" target="_blank" class="proj-link">GitHub →</a>
+      <div class="proj-card reveal" data-delay="0">
+        <div class="proj-top">
+          <span class="proj-num">01</span>
+          <a href="https://github.com/Jestin1507" target="_blank" class="proj-gh">GitHub</a>
         </div>
-        <p>CNN transfer learning on 10,000+ images across 90 species. Boosted accuracy from 35% → <strong>91.76%</strong>. Production REST API at 100+ req/sec, &lt;200ms latency.</p>
-        <div class="proj-stats">
-          <div><strong>91.76%</strong><span>Accuracy</span></div>
-          <div><strong>90</strong><span>Species</span></div>
-          <div><strong>&lt;200ms</strong><span>Latency</span></div>
+        <h3>Automated Species Identification</h3>
+        <p>CNN transfer learning on 10,000+ images across 90 species. Boosted accuracy from 35% to <strong>91.76%</strong> via hyperparameter tuning. Production REST API at 100+ req/sec with under 200ms latency.</p>
+        <div class="proj-metrics">
+          <div class="pm"><strong>91.76%</strong><span>Accuracy</span></div>
+          <div class="pm"><strong>90</strong><span>Species</span></div>
+          <div class="pm"><strong>&lt;200ms</strong><span>Latency</span></div>
         </div>
         <div class="proj-tags"><span>ResNet50</span><span>VGG16</span><span>TensorFlow</span><span>Flask</span><span>REST API</span></div>
       </div>
 
-      <div class="proj-card reveal">
-        <div class="proj-num">02</div>
-        <div class="proj-header">
-          <h3>Solar Flare Classification</h3>
-          <a href="https://github.com/Jestin1507" target="_blank" class="proj-link">GitHub →</a>
+      <div class="proj-card reveal" data-delay="80">
+        <div class="proj-top">
+          <span class="proj-num">02</span>
+          <a href="https://github.com/Jestin1507" target="_blank" class="proj-gh">GitHub</a>
         </div>
-        <p>DenseNet121 + GRU + Attention on 8,000+ satellite sequences. 75% accuracy with 58% M-class recall. Deployed in React via TensorFlow.js — zero backend. IEEE published.</p>
-        <div class="proj-stats">
-          <div><strong>75%</strong><span>Accuracy</span></div>
-          <div><strong>8K+</strong><span>Sequences</span></div>
-          <div><strong>IEEE</strong><span>Published</span></div>
+        <h3>Solar Flare Classification</h3>
+        <p>DenseNet121 + GRU + Attention model trained on 8,000+ satellite sequences, achieving 75% accuracy with 58% M-class recall. Deployed in React via TensorFlow.js with no backend. Research published on IEEE Xplore.</p>
+        <div class="proj-metrics">
+          <div class="pm"><strong>75%</strong><span>Accuracy</span></div>
+          <div class="pm"><strong>8K+</strong><span>Sequences</span></div>
+          <div class="pm"><strong>IEEE</strong><span>Published</span></div>
         </div>
         <div class="proj-tags"><span>DenseNet121</span><span>GRU</span><span>Attention</span><span>TF.js</span><span>React</span></div>
       </div>
 
-      <div class="proj-card reveal">
-        <div class="proj-num">03</div>
-        <div class="proj-header">
-          <h3>Retail Profitability Intelligence</h3>
-          <a href="https://github.com/Jestin1507/Retail-Profitability-Intelligence" target="_blank" class="proj-link">GitHub →</a>
+      <div class="proj-card reveal" data-delay="160">
+        <div class="proj-top">
+          <span class="proj-num">03</span>
+          <a href="https://github.com/Jestin1507/Retail-Profitability-Intelligence" target="_blank" class="proj-gh">GitHub</a>
         </div>
-        <p>End-to-end EDA with Spark & SQL aggregations. Engineered Profit Margin & Risk Score KPIs. Interactive Power BI & Tableau dashboards for pricing and inventory decisions.</p>
-        <div class="proj-stats">
-          <div><strong>5+</strong><span>KPIs</span></div>
-          <div><strong>Spark</strong><span>Processing</span></div>
-          <div><strong>Power BI</strong><span>Dashboards</span></div>
+        <h3>Retail Profitability Intelligence</h3>
+        <p>End-to-end EDA pipeline with Spark and SQL aggregations. Engineered Profit Margin and Risk Score KPIs for discount impact analysis. Delivered interactive Power BI and Tableau dashboards for pricing decisions.</p>
+        <div class="proj-metrics">
+          <div class="pm"><strong>5+</strong><span>KPIs Built</span></div>
+          <div class="pm"><strong>Spark</strong><span>Processing</span></div>
+          <div class="pm"><strong>Power BI</strong><span>Dashboards</span></div>
         </div>
         <div class="proj-tags"><span>Python</span><span>SQL</span><span>Apache Spark</span><span>Power BI</span><span>Tableau</span></div>
       </div>
 
-      <div class="proj-card proj-featured reveal">
-        <div class="proj-num">04</div>
-        <div class="proj-header">
-          <h3>Zomato Market Intelligence Platform</h3>
-          <div class="proj-links-row">
-            <a href="https://github.com/Jestin1507" target="_blank" class="proj-link">GitHub →</a>
-            <a href="https://zomato-market-intelligence-mccpyls2pcar3w6jbqpdei.streamlit.app/" target="_blank" class="proj-link-live">Live Demo ↗</a>
+      <div class="proj-card reveal" data-delay="0">
+        <div class="proj-top">
+          <span class="proj-num">04</span>
+          <div class="proj-top-links">
+            <a href="https://github.com/Jestin1507" target="_blank" class="proj-gh">GitHub</a>
+            <a href="https://zomato-market-intelligence-mccpyls2pcar3w6jbqpdei.streamlit.app/" target="_blank" class="proj-live">Live Demo</a>
           </div>
         </div>
-        <p>End-to-end Restaurant Market Intelligence Platform analyzing <strong>12,000+ Bengaluru restaurants</strong> across 90+ locations. EDA, sentiment analysis, Random Forest rating prediction, K-Means clustering, and a Market Expansion Advisor deployed on Streamlit Cloud.</p>
-        <div class="proj-stats">
-          <div><strong>12K+</strong><span>Restaurants</span></div>
-          <div><strong>90+</strong><span>Locations</span></div>
-          <div><strong>R²=0.41</strong><span>Model</span></div>
+        <h3>Zomato Market Intelligence Platform</h3>
+        <p>Restaurant market intelligence platform analysing <strong>12,000+ Bengaluru restaurants</strong> across 90+ locations. Covers EDA, sentiment analysis, Random Forest rating prediction, K-Means clustering, and a Market Expansion Advisor deployed on Streamlit Cloud.</p>
+        <div class="proj-metrics">
+          <div class="pm"><strong>12K+</strong><span>Restaurants</span></div>
+          <div class="pm"><strong>90+</strong><span>Locations</span></div>
+          <div class="pm"><strong>R²=0.41</strong><span>Rating Model</span></div>
         </div>
-        <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>Random Forest</span><span>K-Means</span><span>Streamlit</span><span>Plotly</span><span>MLOps</span></div>
+        <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>Random Forest</span><span>K-Means</span><span>Streamlit</span><span>Plotly</span></div>
       </div>
 
-      <div class="proj-card proj-featured reveal">
-        <div class="proj-num">05</div>
-        <div class="proj-header">
-          <h3>Model Regression Detection System <span class="proj-badge">LLMOps</span></h3>
-          <div class="proj-links-row">
-            <a href="https://github.com/Jestin1507" target="_blank" class="proj-link">GitHub →</a>
-            <a href="https://model-regression-detection-5gn846yxu6z3xjez4pqfce.streamlit.app/" target="_blank" class="proj-link-live">Live Demo ↗</a>
+      <div class="proj-card reveal" data-delay="80">
+        <div class="proj-top">
+          <span class="proj-num">05</span>
+          <div class="proj-top-links">
+            <a href="https://github.com/Jestin1507" target="_blank" class="proj-gh">GitHub</a>
+            <a href="https://model-regression-detection-5gn846yxu6z3xjez4pqfce.streamlit.app/" target="_blank" class="proj-live">Live Demo</a>
           </div>
         </div>
-        <p>End-to-end LLMOps platform automating LLM evaluation, monitoring, and regression detection. Benchmarks Groq & Gemini via golden datasets, compares prompt versions, detects performance degradation. Full CI/CD via GitHub Actions on every push.</p>
-        <div class="proj-stats">
-          <div><strong>Groq+</strong><span>Gemini</span></div>
-          <div><strong>CI/CD</strong><span>Automated</span></div>
-          <div><strong>Auto</strong><span>Regression Det.</span></div>
+        <h3>Model Regression Detection <span class="proj-badge-inline">LLMOps</span></h3>
+        <p>LLMOps platform that automates LLM evaluation, monitoring, and regression detection. Benchmarks Groq and Gemini using a golden dataset, compares prompt versions, and runs full CI/CD via GitHub Actions on every push.</p>
+        <div class="proj-metrics">
+          <div class="pm"><strong>Groq</strong><span>+ Gemini</span></div>
+          <div class="pm"><strong>CI/CD</strong><span>Automated</span></div>
+          <div class="pm"><strong>Auto</strong><span>Regression Det.</span></div>
         </div>
-        <div class="proj-tags"><span>Python</span><span>LLMOps</span><span>Groq API</span><span>Gemini API</span><span>Streamlit</span><span>GitHub Actions</span><span>Prompt Engineering</span></div>
+        <div class="proj-tags"><span>Python</span><span>LLMOps</span><span>Groq API</span><span>Gemini API</span><span>Streamlit</span><span>GitHub Actions</span></div>
       </div>
 
-      <div class="proj-card reveal">
-        <div class="proj-num">06</div>
-        <div class="proj-header">
-          <h3>Multi-Document RAG Research Assistant</h3>
-          <a href="https://github.com/Jestin1507" target="_blank" class="proj-link">GitHub →</a>
+      <div class="proj-card reveal" data-delay="160">
+        <div class="proj-top">
+          <span class="proj-num">06</span>
+          <a href="https://github.com/Jestin1507" target="_blank" class="proj-gh">GitHub</a>
         </div>
-        <p>AI-powered Q&A across multiple research PDFs using FAISS vector indexing, Sentence Transformer embeddings, and LangChain RAG pipeline. RAGAS evaluation + W&B experiment tracking. Minimises hallucinations with source-referenced answers.</p>
-        <div class="proj-stats">
-          <div><strong>FAISS</strong><span>Vector Search</span></div>
-          <div><strong>RAGAS</strong><span>Evaluation</span></div>
-          <div><strong>W&B</strong><span>Tracking</span></div>
+        <h3>Multi-Document RAG Research Assistant</h3>
+        <p>AI-powered Q&amp;A system for multiple research PDFs using FAISS vector indexing and Sentence Transformer embeddings. LangChain RAG pipeline with RAGAS evaluation and Weights &amp; Biases experiment tracking to minimise hallucinations.</p>
+        <div class="proj-metrics">
+          <div class="pm"><strong>FAISS</strong><span>Vector Search</span></div>
+          <div class="pm"><strong>RAGAS</strong><span>Evaluation</span></div>
+          <div class="pm"><strong>W&amp;B</strong><span>Tracking</span></div>
         </div>
         <div class="proj-tags"><span>LangChain</span><span>LlamaIndex</span><span>FAISS</span><span>RAG</span><span>Sentence Transformers</span><span>RAGAS</span><span>Streamlit</span></div>
       </div>
@@ -309,30 +319,26 @@
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Education</span>
-      <h2 class="section-title">Academic <em>foundation</em></h2>
+      <h2 class="section-title">Academic <em>background</em></h2>
     </div>
     <div class="edu-grid">
       <div class="edu-card reveal">
-        <div class="edu-img-wrap">
-          <img src="assets/images/christ_university.png" alt="CHRIST University" class="edu-img"/>
-        </div>
+        <div class="edu-img-wrap"><img src="assets/images/christ_university.png" alt="CHRIST University" class="edu-img"/></div>
         <div class="edu-body">
-          <span class="edu-year">2024 – 2026</span>
+          <span class="edu-year">2024 – 2026 · Completed</span>
           <h3>Master of Science in Data Science</h3>
           <p class="edu-inst">CHRIST (Deemed to be University)</p>
-          <p class="edu-loc">📍 Bengaluru, India</p>
+          <p class="edu-loc">Bengaluru, India</p>
           <div class="edu-tags"><span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Statistical Modelling</span></div>
         </div>
       </div>
       <div class="edu-card reveal">
-        <div class="edu-img-wrap">
-          <img src="assets/images/mg_university.png" alt="MG University" class="edu-img"/>
-        </div>
+        <div class="edu-img-wrap"><img src="assets/images/mg_university.png" alt="MG University" class="edu-img"/></div>
         <div class="edu-body">
-          <span class="edu-year">2021 – 2024</span>
+          <span class="edu-year">2021 – 2024 · Completed</span>
           <h3>Bachelor of Science in Statistics</h3>
           <p class="edu-inst">Sree Sankara College, Kalady</p>
-          <p class="edu-loc">📍 MG University, Kerala</p>
+          <p class="edu-loc">MG University, Kerala</p>
           <div class="edu-tags"><span>Statistics</span><span>Probability</span><span>Data Analysis</span><span>R Programming</span></div>
         </div>
       </div>
@@ -344,31 +350,31 @@
 <section class="research section" id="research">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">Research & IP</span>
-      <h2 class="section-title">Published work &amp; <em>patents</em></h2>
+      <span class="section-tag">Research &amp; IP</span>
+      <h2 class="section-title">Publications &amp; <em>patents</em></h2>
     </div>
     <div class="research-grid">
       <div class="research-card reveal">
         <div class="research-meta">
-          <span class="research-source">IEEE Xplore</span>
+          <span class="research-source ieee-src">IEEE Xplore</span>
           <span class="research-date">Feb 2026 · ICVADV-2026</span>
         </div>
         <h3>Synthetic Data Augmentation for Robust Solar Flare Classification</h3>
-        <p class="research-subtitle">A Comparative Analysis of Conditional DCGAN, VAE, and Diffusion Models</p>
-        <p>Benchmarked 3 generative architectures for classifier robustness on imbalanced solar flare datasets. Demonstrated measurable improvement in minority class recall via synthetic augmentation.</p>
+        <p class="research-sub">A Comparative Analysis of Conditional DCGAN, VAE, and Diffusion Models</p>
+        <p>Benchmarked three generative deep learning architectures for improving classifier robustness on imbalanced astronomical datasets. Demonstrated measurable improvement in minority class recall through synthetic augmentation.</p>
         <div class="research-tags"><span>DCGAN</span><span>VAE</span><span>Diffusion Models</span><span>Class Imbalance</span></div>
-        <a href="https://ieeexplore.ieee.org/abstract/document/11470543" target="_blank" class="research-cta">Read Paper →</a>
+        <a href="https://ieeexplore.ieee.org/abstract/document/11470543" target="_blank" class="research-cta">Read on IEEE Xplore</a>
       </div>
       <div class="research-card reveal">
         <div class="research-meta">
-          <span class="research-source patent-source">Govt. of India</span>
+          <span class="research-source patent-src">Govt. of India</span>
           <span class="research-date">Jan 2025 · No. 443142-001</span>
         </div>
         <h3>Mobile Cooler — Design Patent</h3>
-        <p class="research-subtitle">Class 23-04 · Co-inventor</p>
-        <p>Co-inventor of a Government of India–registered Design Patent for a Mobile Cooler device — demonstrating innovation extending beyond software into physical product design and IP.</p>
+        <p class="research-sub">Class 23-04 · Co-inventor</p>
+        <p>Co-inventor of a Government of India registered Design Patent for a Mobile Cooler device. Demonstrates innovation that extends beyond software into physical product design and intellectual property.</p>
         <div class="research-tags"><span>Industrial Design</span><span>Patent</span><span>Class 23-04</span></div>
-        <a href="https://drive.google.com/file/d/1Lva7rFCoIZV57CRI1X3I5uKd2ITCGUag/view?usp=drive_link" target="_blank" class="research-cta">View Patent →</a>
+        <a href="https://drive.google.com/file/d/1Lva7rFCoIZV57CRI1X3I5uKd2ITCGUag/view?usp=drive_link" target="_blank" class="research-cta">View Patent Document</a>
       </div>
     </div>
   </div>
@@ -380,61 +386,60 @@
     <div class="contact-inner">
       <div class="contact-left reveal">
         <span class="section-tag">Contact</span>
-        <h2 class="section-title">Let's <em>work together</em></h2>
-        <p class="contact-desc">Open to full-time roles in AI/ML Engineering, Data Science, and Data Analytics. Based in Bengaluru — open to hybrid and remote.</p>
+        <h2 class="section-title">Open to<br/><em>new opportunities</em></h2>
+        <p class="contact-desc">Looking for full-time roles in AI/ML Engineering, Data Science, and Data Analytics. Based in Bengaluru and open to hybrid or remote work.</p>
         <div class="contact-details">
           <a href="mailto:jestinthomas1507@gmail.com" class="contact-row">
-            <span class="cr-label">Email</span>
-            <span class="cr-val">jestinthomas1507@gmail.com →</span>
+            <span class="cr-icon">📧</span>
+            <div>
+              <p class="cr-label">Email</p>
+              <p class="cr-val">jestinthomas1507@gmail.com</p>
+            </div>
           </a>
           <a href="tel:+918943887935" class="contact-row">
-            <span class="cr-label">Phone</span>
-            <span class="cr-val">+91 89438 87935 →</span>
+            <span class="cr-icon">📱</span>
+            <div>
+              <p class="cr-label">Phone</p>
+              <p class="cr-val">+91 89438 87935</p>
+            </div>
           </a>
           <a href="https://linkedin.com/in/jestin-thomas-90a109317" target="_blank" class="contact-row">
-            <span class="cr-label">LinkedIn</span>
-            <span class="cr-val">jestin-thomas-90a109317 →</span>
+            <span class="cr-icon">💼</span>
+            <div>
+              <p class="cr-label">LinkedIn</p>
+              <p class="cr-val">jestin-thomas-90a109317</p>
+            </div>
           </a>
           <a href="https://github.com/Jestin1507" target="_blank" class="contact-row">
-            <span class="cr-label">GitHub</span>
-            <span class="cr-val">Jestin1507 →</span>
+            <span class="cr-icon">🐙</span>
+            <div>
+              <p class="cr-label">GitHub</p>
+              <p class="cr-val">Jestin1507</p>
+            </div>
           </a>
         </div>
-        <a href="assets/resume/JestinThomas_Resume.pdf" target="_blank" class="btn-primary" style="margin-top:2rem;display:inline-flex;align-items:center;gap:.5rem;">
-          Download Resume ↓
-        </a>
+        <a href="assets/resume/JestinThomas_Resume.pdf" target="_blank" class="btn-primary" style="margin-top:2rem;display:inline-flex;align-items:center;gap:.5rem;">Download Resume</a>
       </div>
       <div class="contact-right reveal">
-        <form id="contact-form" class="contact-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="from_name">Name *</label>
-              <input type="text" id="from_name" name="name" placeholder="Jane Smith" required/>
+        <div class="form-card">
+          <h3>Send a Message</h3>
+          <p>Messages go directly to my Gmail.</p>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label for="from_name">Name</label><input type="text" id="from_name" name="name" placeholder="Jane Smith" required/></div>
+              <div class="form-group"><label for="reply_to">Email</label><input type="email" id="reply_to" name="email" placeholder="jane@company.com" required/></div>
             </div>
-            <div class="form-group">
-              <label for="reply_to">Email *</label>
-              <input type="email" id="reply_to" name="email" placeholder="jane@company.com" required/>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company" placeholder="Acme Corp"/>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject *</label>
-            <input type="text" id="subject" name="subject" placeholder="Job Opportunity" required/>
-          </div>
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="5" placeholder="Hi Jestin..." required></textarea>
-          </div>
-          <button type="submit" class="btn-primary form-btn" id="form-submit">
-            <span id="btn-text">Send Message</span>
-            <span id="btn-loading" style="display:none">Sending…</span>
-          </button>
-          <div id="form-success" class="form-msg success" style="display:none">✅ Message sent! I'll be in touch soon.</div>
-          <div id="form-error" class="form-msg error" style="display:none">❌ Something went wrong. Please email me directly.</div>
-        </form>
+            <div class="form-group"><label for="company">Company</label><input type="text" id="company" name="company" placeholder="Acme Corp"/></div>
+            <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="Job Opportunity" required/></div>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Hi Jestin..." required></textarea></div>
+            <button type="submit" class="btn-primary form-btn">
+              <span id="btn-text">Send Message</span>
+              <span id="btn-loading" style="display:none">Sending...</span>
+            </button>
+            <div id="form-success" class="form-msg success" style="display:none">Message sent! I'll be in touch soon.</div>
+            <div id="form-error" class="form-msg error" style="display:none">Something went wrong. Please email me directly.</div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -445,14 +450,14 @@
   <div class="container">
     <div class="footer-inner">
       <p class="footer-name">Jestin Thomas</p>
-      <p class="footer-desc">AI/ML Engineer & Data Scientist · Bengaluru, India</p>
+      <p class="footer-desc">AI/ML Engineer &amp; Data Scientist · Bengaluru, India</p>
       <div class="footer-links">
         <a href="https://github.com/Jestin1507" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/jestin-thomas-90a109317" target="_blank">LinkedIn</a>
-        <a href="https://ieeexplore.ieee.org/abstract/document/11470543" target="_blank">IEEE</a>
+        <a href="https://ieeexplore.ieee.org/abstract/document/11470543" target="_blank">IEEE Paper</a>
         <a href="assets/resume/JestinThomas_Resume.pdf" target="_blank">Resume</a>
       </div>
-      <p class="footer-copy">© 2026 Jestin Thomas. Built with care.</p>
+      <p class="footer-copy">© 2026 Jestin Thomas</p>
     </div>
   </div>
 </footer>
